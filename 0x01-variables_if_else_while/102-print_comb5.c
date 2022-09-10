@@ -15,11 +15,12 @@ int main(void)
 		a = i / 10;
 		b = i % 10;
 		for (j = 0; j < 100; j++)
+		{
 			c = j / 10;
 			d = j % 10;
 			if (a < c || (a == c && b < d))
 			{
-				putchar(a + '0')
+				putchar(a + '0');
 				putchar(b + '0');
 				putchar(32);
 				putchar(c + '0');
@@ -29,6 +30,7 @@ int main(void)
 				}
 			}
 		}
+	}
 		putchar(10);
 		return (0);
 }
