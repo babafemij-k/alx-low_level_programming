@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
 * main - entry point
-* Description - printing the alphabets
-* in lowercase
+* Description - printing alphabets in
+* lowercase and uppercase
 * Return: 0
 */
 int main(void)
@@ -14,6 +14,11 @@ int main(void)
 		putchar(alphabet);
 		alphabet++;
 	} while (alphabet <= 'z');
+		alphabet = 'A';
+	do {
+		putchar(alphabet);
+		alphabet++;
+	} while (alphabet <= 'Z');
 		putchar('\n');
-		return (0);
+	return (0);
 }
